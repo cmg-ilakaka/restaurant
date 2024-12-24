@@ -1,0 +1,95 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5D300;
+    color: #333;
+
+}
+.jauneT{
+    color: #F1C200;
+}
+/* En-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bl{
+    color: #FFF;
+}
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    margin: 20px;
+}
+
+#accueil {
+    background-color: #fff;
+    text-align: center;
+}
+
+#menu {
+    background-color: #F1C200;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    text-align: center;
+    color: #F1C200;
+}
+
+#contact {
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
