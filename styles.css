@@ -99,3 +99,28 @@ section {
         text-align: center;
     }
 /* Sur mobile : tous les éléments sont affichés verticalement
+
+/* Sur mobile : tous les éléments sont affichés verticalement */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+}
+
+/* Sur Desktop, centrer le 10ème élément (jus) */
+@media (min-width: 769px) {
+    /* Positionner le jus au milieu sans affecter les autres éléments */
+    .menu-items {
+        justify-content: flex-start; /* Alignement à gauche */
+    }
+
+    .menu-item:nth-child(10) {
+        margin-left: auto; /* Pousse "jus" vers le centre */
+        margin-right: auto; /* Pousse "jus" vers le centre */
+    }
+}
