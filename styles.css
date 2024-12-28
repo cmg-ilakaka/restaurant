@@ -11,8 +11,8 @@ body {
     color: #333;
 }
 
-.jauneT {
-    color: #F1C200;
+.jaun {
+    color: #FFF;
 }
 
 /* En-tête */
@@ -94,5 +94,8 @@ section {
     text-align: left;
     padding-left: 20px;
 }
-
+#contct{
+        background-color: #F1C200;
+        text-align: center;
+    }
 /* Sur mobile : tous les éléments sont affichés verticalement
