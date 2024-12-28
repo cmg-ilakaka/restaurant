@@ -9,11 +9,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #F5D300;
     color: #333;
-
 }
-.jauneT{
+
+.jauneT {
     color: #F1C200;
 }
+
 /* En-tête */
 header {
     background-color: #333;
@@ -23,19 +24,21 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-#bl{
+
+#bl {
     color: #FFF;
 }
+
 header .logo img {
     height: 50px;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-left: 20px;
 }
 
@@ -62,34 +65,34 @@ section {
 
 .menu-items {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .menu-item {
-    width: 30%;
+    width: calc(33.33% - 20px);
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    text-align: center;
 }
 
 .menu-item h3 {
-    text-align: center;
     color: #F1C200;
 }
 
-#contact {
-    background-color: #fff;
-    text-align: center;
+/* Sous-menus */
+.sub-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
 }
 
-/* Pied de page */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.sub-menu li {
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
 }
+
+/* Sur mobile : tous les éléments sont affichés verticalement
