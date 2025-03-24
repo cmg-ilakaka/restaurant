@@ -1,197 +1,116 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resto CMG Ilakaka</title>
-    <meta name="description" content="Bienvenue au Resto CMG Ilakaka, un restaurant où chaque plat est une œuvre d'art culinaire.">
-    <link rel="canonical" href="https://cmg-ilakaka.github.io/restaurant">
-    <link rel="icon" href="https://cmg-ilakaka.github.io/restaurant/favicon.png" type="image/png">
-    <link rel="shortcut icon" href="https://cmg-ilakaka.github.io/restaurant/favicon.png" type="image/png">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
+    <title>cmg resto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery3.2.1.js"></script>
+    <script src="scipt.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="https://cmg-ilakaka.github.io/restaurant/favicon.png" alt="Logo Restaurant La Belle Table">
+    <header class="header">
+        <div class="headerContainer">
+            <div class="logo imgDiv">
+                <img src="img/logo.png" alt="logoCmg">
+            </div>
+            <div class="compte">
+                <p class="pCompte"><a href="http://evolagasy.ct.ws/login.php">compte</a></p>
+            </div>
+            <div class="payer">
+                <p class="pCompte">payer</p>
+            </div>
+            <div class="panier imgDiv">
+                <img src="img/panier.png" alt="panier">
+                <sup><b class="countP">0</b></sup>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <section id="accueil">
-        <h1 class="jauneT">Bienvenue à CMG Ilakaka</h1>
-        <p>Un restaurant où chaque plat est une œuvre d'art culinaire. Profitez de nos délices et de notre ambiance chaleureuse.</p>
-    </section>
-
-    <section id="menu">
-        <h2>Notre Menu</h2>
-        <div class="menu-items">
-            <!-- Pizza Section -->
-            <div class="menu-item">
-                <h3>Pizzas</h3>
-                <ul class="sub-menu">
-                    <li>Pizza Margherita</li>
-                    <li>Pizza Pepperoni</li>
-                    <li>Pizza Quatre Fromages</li>
-                    <li>Pizza Végétarienne</li>
-                    <li>Pizza Hawaïenne</li>
-                    <li>Pizza Calzone</li>
-                    <li>Pizza Reine</li>
-                    <li>Pizza Tex-Mex</li>
-                    <li>Pizza Bolognese</li>
-                    <li>Pizza Funghi</li>
-                    <li>Pizza Royale</li>
-                </ul>
+    <div class="container">
+        <div class="left">
+            <div class="pizzaC cart">
+                <p class="pizzaTitle title">PIZZA</p>
+                <div class="pizzaListe">
+                    <p id="pizzaSpecial"><b class="ajouter">buy🛒</b>Pizza special  <sup>25 000Ar</sup></p>
+                    <p class="pizzaPoulet"><b class="ajouter">buy🛒</b>Pizza poulet <sup>25 000Ar</sup></p>
+                    <p class="pizzaViande"><b class="ajouter">buy🛒</b>Pizza viande <sup>25 000Ar</sup></p>
+                    <p class="pizzaMargerita"><b class="ajouter">buy🛒</b>Pizza margerita <sup>25 000Ar</sup></p>
+                    <p class="pizza4fromage"><b class="ajouter">buy🛒</b>Pizza 4 fromage <sup>25 000Ar</sup></p>
+                </div>
             </div>
-
-            <!-- Burger Section -->
-            <div class="menu-item">
-                <h3>Burgers</h3>
-                <ul class="sub-menu">
-                    <li>Burger Classique</li>
-                    <li>Burger Cheeseburger</li>
-                    <li>Burger Bacon</li>
-                    <li>Burger Végétarien</li>
-                </ul>
+            <div class="pate cart">
+                <p class="pateTitle title">PATE</p>
+                <div class="pateListe">
+                    <p id="misaoSpecial"> <b class="ajouter">buy🛒</b>Misao special<sup>20 000Ar</sup></p>
+                    <p id="misaoPoulet"> <b class="ajouter">buy🛒</b>Misao poulet<sup>18 000Ar</sup></p>
+                    <p id="misaoViande"><b class="ajouter">buy🛒</b>Misao viande<sup>18 000Ar</sup> </p>
+                    <p id="nouilleSpecial"><b class="ajouter">buy🛒</b>Nouille special<sup>20 000Ar</sup> </p>
+                    <p id="spaghettiCarbonarat"><b class="ajouter">buy🛒</b>Spaghetti carbonarat<sup>18 000Ar</sup> </p>
+                    <p id="spaghettiBolognaise"><b class="ajouter">buy🛒</b>Spaghetti bolognaise<sup>15 000Ar</sup> </p>
+                   
+                </div>
             </div>
-
-            <!-- Sandwich Section -->
-            <div class="menu-item">
-                <h3>Sandwichs</h3>
-                <ul class="sub-menu">
-                    <li>Sandwich Poulet</li>
-                    <li>Sandwich Thon</li>
-                    <li>Sandwich Végétarien</li>
-                    <li>Sandwich Jambon</li>
-                </ul>
-            </div>
-
-            <!-- Tacos Section -->
-            <div class="menu-item">
-                <h3>Tacos</h3>
-                <ul class="sub-menu">
-                    <li>Taco Viande</li>
-                    <li>Taco Poulet</li>
-                    <li>Taco Végétarien</li>
-                </ul>
-            </div>
-
-            <!-- Riz Section -->
-            <div class="menu-item">
-                <h3>Riz</h3>
-                <ul class="sub-menu">
-                    <li>Riz Saumon</li>
-                    <li>Riz Poulet</li>
-                    <li>Riz Bœuf</li>
-                    <li>Riz Végétarien</li>
-                </ul>
-            </div>
-
-            <!-- Soupe Section -->
-            <div class="menu-item">
-                <h3>Soupes</h3>
-                <ul class="sub-menu">
-                    <li>Soupe de légumes</li>
-                    <li>Soupe de Tomate</li>
-                    <li>Soupe de Poulet</li>
-                </ul>
-            </div>
-
-            <!-- Pâtes Section -->
-            <div class="menu-item">
-                <h3>Pâtes</h3>
-                <ul class="sub-menu">
-                    <li>Pâtes Carbonara</li>
-                    <li>Pâtes Bolognese</li>
-                    <li>Pâtes Pesto</li>
-                </ul>
-            </div>
-
-            <!-- Nouilles Section -->
-            <div class="menu-item">
-                <h3>Nouilles</h3>
-                <ul class="sub-menu">
-                    <li>Nouilles Sautées</li>
-                    <li>Nouilles au Poulet</li>
-                    <li>Nouilles aux légumes</li>
-                </ul>
-            </div>
-
-            <!-- Glaces Section -->
-            <div class="menu-item">
-                <h3>Glaces</h3>
-                <ul class="sub-menu">
-                    <li>Glace Vanille</li>
-                    <li>Glace Chocolat</li>
-                    <li>Glace Fraise</li>
-                    <li>Glace Menthe</li>
-                </ul>
-            </div>
-
-            <!-- Jus Section -->
-            <div class="menu-item">
-                <h3>Jus</h3>
-                <ul class="sub-menu">
-                    <li>Jus d'Orange</li>
-                    <li>Jus de Mangue</li>
-                    <li>Jus de Pomme</li>
-                    <li>Jus de Citron</li>
-                </ul>
-            </div>
-
-            <!-- Gateaux Section -->
-            <div class="menu-item">
-                <h3>Gâteaux</h3>
-                <ul class="sub-menu">
-                    <li>Gâteau au Chocolat</li>
-                    <li>Gâteau au Yaourt</li>
-                    <li>Gâteau aux Fruits</li>
-                    <li>Gâteau à la Vanille</li>
-                </ul>
-            </div>
-             <!-- Gateaux Section -->
-            <div class="menu-item">
-                <h3>Gâteaux</h3>
-                <ul class="sub-menu">
-                    <li>Gâteau au Chocolat</li>
-                    <li>Gâteau au Yaourt</li>
-                    <li>Gâteau aux Fruits</li>
-                    <li>Gâteau à la Vanille</li>
-                </ul>
+            <div class="glace cart">
+                <p class="glaceTitle title">GLACE</p>
+                <div class="glaceListe">
+                    <p id="soupeFraise"> <b class="ajouter">buy🛒</b>Glace fraise<sup>5 000Ar</sup></p>
+                    <p id="burgeVanille"> <b class="ajouter">buy🛒</b>Glace vanille<sup>5 000Ar</sup></p>
+                    <p id="chinoiseChoco"> <b class="ajouter">buy🛒</b>Glace choco<sup>5 000Ar</sup></p>
+                    
+                </div>
             </div>
         </div>
-    </section>
-    <div id="contct">
-    <section id="contact"  class="container py-5 text-center">
-        <h2 class="jaun">Contactez-nous</h2>
-        <p>
-            <button class="btn btn-success">
-                <a id="bl" href="https://www.google.com/maps?q=-22.699694139204162,45.215786556580326" target="_blank">Open Location on Google Maps</a>
-            </button>
-        </p>
-        <a class="an" href="tel:+261336716667">+261 33 67 166 67</a><br>
-        <a class="an" href="tel:+261381800105">+261 38 18 001 05</a><br>
-        <H3>DEVELOPPEUR:</H3>
-        <img src="caida.png" alt="caida"></img><br>
-        <a class="an" href="tel:+261387093302">+261 38 70 933 02</a><br>
-        <a class="an" href="mailto:francqui.raelison@gmail.com?subject=Demande d'informations&body=Bonjour,">francqui.raelison@gmail.com</a>
-        <p>Adresse : 313 Tsaratanana ilakaka -22.699694139204162,45.215786556580326</p>
-    </section>
-</div>
-    <footer>
-        <p>&copy; 2024 Restaurant CMG ilakaka - Tous droits réservés</p>
-    </footer>
+        <!-- VITA LEFT -------------------------------------------------------------------------------------- -->
+        <div class="right">
+            <div class="pate cart">
+                <p class="burgerTitle title">BURGER</p>
+                <div class="burgerListe">
+                    <p id="burgerViande"> <b class="ajouter">buy🛒</b>Burger viande<sup>20 000Ar</sup></p>
+                    <p id="burgerPoulet"> <b class="ajouter">buy🛒</b>Burger poulet<sup>20 000Ar</sup></p>
 
-    <script src="script.js"></script>
+                </div>
+            </div>
+            <div class="tacos cart">
+                <p class="tacosTitle title">TACOS</p>
+                <div class="tacosListe">
+                    <p id="tacosViande"> <b class="ajouter">buy🛒</b>Tacos viande<sup>20 000Ar</sup></p>
+                    <p id="tacosPoulet"> <b class="ajouter">buy🛒</b>Tacos poulet<sup>20 000Ar</sup></p>
+                    
+                </div>
+            </div>
+            <div class="sandwich cart">
+                <p class="sandwhichTitle title">SANDWICH</p>
+                <div class="sandwichListe">
+                    <p id="SandwichViande"> <b class="ajouter">buy🛒</b>Sandwich viande<sup>20 000Ar</sup></p>
+                    <p id="SandwichPoulet"> <b class="ajouter">buy🛒</b>Sandwich poulet<sup>20 000Ar</sup></p>
+                    
+                </div>
+            </div>
+            <div class="soupe cart">
+                <p class="soupeTitle title">SOUPE</p>
+                <div class="soupeListe">
+                    <p id="soupeSpecial"> <b class="ajouter">buy🛒</b>Soupe special<sup>20 000Ar</sup></p>
+                    <p id="burgeGarnie"> <b class="ajouter">buy🛒</b>Soupe garnie<sup>10 000Ar</sup></p>
+                    <p id="chinoiseChinoise"> <b class="ajouter">buy🛒</b>Soupe chinoise<sup>8 000Ar</sup></p>
+                    
+                </div>
+            </div>
+            <div class="jus cart">
+                <p class="jusTitle title">JUS</p>
+                <div class="jusListe">
+                    <p id="cocktail"> <b class="ajouter">buy🛒</b>Jus cocktail<sup>6 000Ar</sup></p>
+                    <p id="citron"> <b class="ajouter">buy🛒</b>Jus citron<sup>4 000Ar</sup></p>
+                    <p id="goyave"> <b class="ajouter">buy🛒</b>Jus goyave<sup>4 000Ar</sup></p>
+                    <p id="orange"> <b class="ajouter">buy🛒</b>Jus orange<sup>4 000Ar</sup></p>
+                    
+                </div>
+            </div>
+            <form action="img/panier.png" method="post">
+                <button type="submit" id="redirection">redirection
+                </button>
+        </div>
+    </div>
+    
+</form>
 </body>
 </html>
