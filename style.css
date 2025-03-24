@@ -1,0 +1,172 @@
+body{
+    background-color: #f5f355;
+    margin: 0%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+}
+
+.header{
+    background-color: #5bf147;
+    height: 100%;
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+.headerContainer img{
+    width: 100%;
+}
+.imgDiv{
+    width: 8vmin;
+}
+.panier{
+display: flex;
+}
+.panier:hover{
+    cursor: pointer;
+}
+.countP{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(3, 20, 3);
+    background-color: #dcfcfc;
+    width: auto;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex:1;
+    border:1px solid black
+}
+
+.container{
+    display: flex;
+    background-color: red;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 255, 0);
+    width: 50%;
+    height: auto;
+    
+
+}
+.right{
+    background-color: rgb(153, 0, 255);
+    width:50%;
+    height: auto;
+}
+.cart{
+    width: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.title{
+    border-radius: 5px;
+    border-bottom:1px solid black;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+}
+.ajouter{
+    background-color: #5bf147;
+   padding: 1px;
+   color: white;
+   border: 1px solid transparent;
+   border-radius: 5px;
+   font-style: italic;
+   margin-right: 5px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ajouter:hover{
+    cursor: pointer;
+    background-color: red;
+    font-size: 17px;
+}
+sup{
+    font-size: 10px;
+}
+.pCompte{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(3, 20, 3);
+    background-color: #dcfcfc;
+    width: auto;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.pCompte:hover{
+    background-color: #abf1f1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+/*modal manomboka eto*/
+/* styles.css */
+
+/* La modale (par défaut cachée) */
+.modal {
+    display: none; /* Cacher la modale par défaut */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+}
+
+/* Contenu de la modale */
+.modal-content {
+    background-color: #ffffff8a;
+    margin: 15% auto; /* Centrer la modale sur l'écran */
+    padding: 20px;
+    
+    width: 80%; /* Taille modifiable de la modale */
+    max-width: 600px;
+    border-radius: 10px;
+    overflow-y: auto;
+    
+}
+
+/* Le bouton de fermeture */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#modalText{
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.bg{
+    background-color: #dcfcfc;
+    
+}
+.buttonProc{
+    display: flex;
+    justify-content: space-between;
+}
+.formButton{
+    margin: 10px 10px;
+}
