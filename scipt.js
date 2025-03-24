@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   // $("#redirection").click();
+   $("#redirection").click();
    var buy=0;
    var dansPanier=[];
    $(".ajouter").click(function(){
